@@ -2,7 +2,8 @@ apiVersion: appstudio.redhat.com/v1beta1
 kind: IntegrationTestScenario
 metadata:
   labels:
-    test.appstudio.openshift.io/optional: "false" # Change to "true" if you don't need the test to be mandatory
+    # Keep tests optional until pr_check replacement works properly.
+    test.appstudio.openshift.io/optional: "true" 
   name: io-gathering-service-bonfire-tekton
   namespace: obsint-processing-tenant
 spec:
